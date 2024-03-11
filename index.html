@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SEO = Básico -->
+    <!-- Cada página del sitio tiene que ser diferente el título y la descripción -->
+    <title>Cursos Online</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:description" content="Descripción de tu página" />
+    <meta
+      property="og:image"
+      content="URL de la imagen que quieres mostrar en las redes sociales" />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:image"
+      content="URL de la imagen que quieres mostrar en Twitter" />
+
+    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- icono de acceso para IOS -->
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+
+    <!-- links de estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Se cambia el tema de algunos navegadores -->
+    <meta name="theme-color" content="#fafafa" />
+    <!-- Código de las plataformas de Análisis -->
+    <script></script>
+    <!-- Scripts a cargar antes de la renderización -->
+    <script src="preloader.js"></script>
+  </head>
+  <body>
+    <!-- *** ESTRUCTURA SEMÁNTICA *** -->
+    <!-- Header (encabezado de la página, zona superior) -->
+    <header>
+      <img src="svg/logotipo1.svg" alt="Logotipo" />
+      <!-- nav (el navegador de toda la web) -->
+      <nav class="Header__nav">
+        <a href="">Inicio</a>
+        <a href="">Cursos</a>
+        <a href="">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- Main (centro de la página, zona central) -->
+    <main>
+      <!-- Banner (zona principal de la página) -->
+      <section class="banner">
+        <!-- Apartado del título -->
+        <article class="banner__titulo">
+          <h1>Cursos Online de Diseño en Figma</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. At maecenas risus at proin
+            pretium nam. Amet enim adipiscing ullamcorper malesuada. Turpis
+            etiam dui pharetra lacus magnis nunc vitae in.
+          </p>
+        </article>
+
+        <!-- Apartado del formulario -->
+        <article class="banner__form">
+          <h2>Más Información</h2>
+          <form action="">
+            <input type="text" placeholder="Nombre" />
+            <input type="email" placeholder="Correo" />
+            <input type="submit" value="Consultar" />
+          </form>
+        </article>
+      </section>
+
+      <!-- Apartado del contador -->
+      <article class="banner__contador">
+        <span>23: 59: 59 </span>
+        <h3>
+          Inscribete en las proximas 24h, y obtene un codigo de descuento del
+          50%
+        </h3>
+      </article>
+
+      <!-- Apartado de los cursos -->
+      <section class="main__cursos">
+        <!-- titulo -->
+        <article class="main__curso-titulo">
+          <img src="svg/camera.svg" alt="" />
+          <h2>Cursos 100% Online</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. At maecenas risus at proin
+            pretium nam. Amet enim adipiscing ullamcorper malesuada. Turpis
+            etiam dui pharetra lacus magnis nunc vitae in.
+          </p>
+        </article>
+      </section>
+
+      <!-- Cursos -->
+      <section class="main__cursos_carta">
+        <h3>Diseño en Figma</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. At maecenas risus at proin
+          pretium nam. Amet enim adipiscing ullamcorper malesuada. Turpis etiam
+          dui pharetra lacus magnis nunc vitae in. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Temporibus debitis in voluptatibus qui
+          pariatur eaque voluptatem soluta? Autem expedita ipsum temporibus
+          reiciendis modi eos, vel ad quae? Amet, blanditiis. Atque.
+        </p>
+
+        <section class="main__cursos-caja">
+          <img src="img/desktop/img_curso.avif" alt="Figma" />
+          <p>Titulo del Curso</p>
+          <h4>99 €</h4>
+        </section>
+
+        <section class="main__cursos-caja">
+          <img src="img/desktop/img_curso.avif" alt="Figma" />
+          <p>Titulo del Curso</p>
+          <h4>99 €</h4>
+        </section>
+
+        <section class="main__cursos-caja">
+          <img src="img/desktop/img_curso.avif" alt="Figma" />
+          <p>Titulo del Curso</p>
+          <h4>99 €</h4>
+        </section>
+      </section>
+
+      <!-- Apartado del formulario de contacto -->
+      <section class="main__contacto">
+        <h2>Contacto</h2>
+        <form action="">
+          <input type="text" placeholder="Nombre" />
+          <input type="email" placeholder="Correo" />
+          <textarea
+            name="mensaje"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Mensaje"></textarea>
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer (final de la página, zona inferior) -->
+    <footer>
+      <img src="svg/Footer_logo.svg" alt="Logotipo" />
+      <article class="footer__redes">
+        <h3>¡Siguenos!</h3>
+        <section class="footer__redes-icons">
+          <a href=""><img src="svg/Icono_twitter.svg" alt="Twitter" /></a>
+          <a href=""><img src="svg/Icono_instagram.svg" alt="Instagram" /></a>
+          <a href=""><img src="svg/Icono_email.svg" alt="Mail" /></a>
+        </section>
+      </article>
+      <article class="footer__direccion">
+        <h3>¡Visitanos!</h3>
+        <a href="">Avenida Portugal, Palma - Mallorca</a>
+      </article>
+    </footer>
+  </body>
+</html>
