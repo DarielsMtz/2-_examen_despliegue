@@ -48,8 +48,8 @@
       <!-- nav (el navegador de toda la web) -->
       <nav class="Header__nav">
         <a href="">Inicio</a>
-        <a href="">Cursos</a>
-        <a href="">Contacto</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </header>
 
@@ -88,7 +88,7 @@
       </article>
 
       <!-- Apartado de los cursos -->
-      <section class="main__cursos">
+      <section class="main__cursos" id="cursos">
         <!-- titulo -->
         <article class="main__curso-titulo">
           <img src="svg/camera.svg" alt="" />
@@ -133,17 +133,11 @@
       </section>
 
       <!-- Apartado del formulario de contacto -->
-      <section class="main__contacto">
+      <section class="main__contacto" id="contacto">
         <h2>Contacto</h2>
         <form action="">
           <input type="text" placeholder="Nombre" />
           <input type="email" placeholder="Correo" />
-          <textarea
-            name="mensaje"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Mensaje"></textarea>
           <input type="submit" value="Enviar" />
         </form>
       </section>

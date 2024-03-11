@@ -46,6 +46,7 @@ html {
     sans-serif;
   font-size: 16px;
   line-height: 1;
+  scroll-behavior: smooth;
 }
 
 /* ---- Apartado del cierpo de la pagina ---- */
@@ -188,7 +189,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: var(--tamaños-escalas-tamaño-3) 0px;
+    padding: var(--tamaños-escalas-tamaño-10) 0px;
 
     > span {
       font-size: 64px;
@@ -203,7 +204,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: var(--tamaños-escalas-tamaño-10) 0px;
+  padding: var(--tamaños-escalas-tamaño-12) 0px;
 
   .main__curso-titulo {
     display: flex;
@@ -247,6 +248,36 @@ main {
     align-items: center;
     gap: 20px;
     padding: var(--tamaños-escalas-tamaño-5);
+  }
+}
+
+/* ---- Apartado del formulario de contacto ---- */
+.main__contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--tamaños-escalas-tamaño-12) 0px;
+
+  /* Parte del fomulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    & input[type="text"],
+    & input[type="email"] {
+      display: flex;
+      align-items: center;
+      width: 600px;
+      gap: 10px;
+      margin: var(--tamaños-escalas-tamaño-5) 0px;
+      padding: var(--Tamaos-Escalas-Tamao-4, 16px) 10px;
+      border-radius: var(--Tamaos-Escalas-Tamao-4, 16px);
+      border: 1px solid var(--Colores-Base-Color_negro, #0d0d0d);
+    }
   }
 }
 
