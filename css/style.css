@@ -199,7 +199,8 @@ main {
 }
 
 /* ---- Apartado de los cursos ---- */
-.main__cursos {
+.main__cursos,
+.main__beneficios {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,6 +224,31 @@ main {
       width: 50%;
       padding-top: 30px;
       font-size: var(--tamaños-escalas-tamaño-4);
+    }
+  }
+}
+
+/* Parte de los beneficios */
+.main__beneficios {
+  > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: var(--tamaños-escalas-tamaño-5) 0px;
+  }
+
+  .main__beneficios-carta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+
+    gap: 20px;
+
+    > h3 {
+      font-size: var(--tamaños-escalas-tamaño-8);
+      padding: var(--tamaños-escalas-tamaño-5) 0px;
     }
   }
 }
